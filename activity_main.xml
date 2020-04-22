@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Distance: "
+        android:layout_margin="25dp"/>
+
+    <TextView
+        android:id="@+id/ldr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="LDR: "
+        android:layout_margin="25dp"
+        android:layout_below="@+id/distance"/>
+
+    <TextView
+        android:id="@+id/led1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ldr"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:hint="Led 1:" />
+
+    <TextView
+        android:id="@+id/led2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Led 2:"
+        android:layout_below="@+id/led1"
+        android:layout_margin="25dp"/>
+
+    <ToggleButton
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ldr"
+        android:layout_margin="25dp"
+        android:layout_toRightOf="@id/led1"
+        android:text="OFF" />
+
+    <ToggleButton
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/led1"
+        android:layout_margin="25dp"
+        android:layout_toRightOf="@id/led2"
+        android:text="OFF" />
+
+</RelativeLayout>
